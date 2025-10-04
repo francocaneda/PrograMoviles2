@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#0D47A1</color>  <color name="primaryLightColor">#5472D3</color> <color name="primaryDarkColor">#002171</color> <color name="secondaryColor">#FFB300</color> <color name="secondaryLightColor">#FFE54C</color>
+    <color name="secondaryDarkColor">#C68400</color>
+    <color name="backgroundLight">#F5F5F5</color>    <color name="surfaceColor">#FFFFFF</color>       <color name="textPrimary">#212121</color>        <color name="textSecondary">#757575</color>      <color name="dividerColor">#BDBDBD</color>       <color name="successGreen">#4CAF50</color>       <color name="errorRed">#D32F2F</color>           <color name="warningYellow">#FFC107</color>      <color name="infoBlue">#2196F3</color>           <color name="accentCyan">#00BCD4</color>
+    <color name="accentDeepPurple">#673AB7</color>
 </resources>

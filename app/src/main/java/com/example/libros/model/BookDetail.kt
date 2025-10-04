@@ -1,26 +1,26 @@
 package com.example.libros.model
 
+import com.google.gson.annotations.SerializedName
+
 data class BookDetail(
     val title: String?,
-    val description: Any?, // Puede ser String o Map
-    val first_publish_date: String?,
-    val publishers: List<String>?,
-    val number_of_pages: Int?,
+    val description: Any?,
+
+    @SerializedName("first_publish_date")
+    val firstPublishDate: String?,
+
+    val publishers: Any?, // Ya era Any?
+
+    @SerializedName("number_of_pages")
+    val numberOfPages: Int?,
+
     val subjects: List<String>?,
     val covers: List<Int>?,
-    val authors: List<Author>?,
-    val languages: List<Language>?
+
+    // ⭐ CAMBIO CLAVE: Autores también a Any?
+    val authors: Any?,
+
+    val languages: Any? // Ya era Any?
 )
 
-data class Author(
-    val author: InnerAuthor?
-)
-
-data class InnerAuthor(
-    val key: String?,
-    val name: String?
-)
-
-data class Language(
-    val key: String?
-)
+// !!! ELIMINA las clases AuthorContainer y AuthorInfo de este archivo !!!
